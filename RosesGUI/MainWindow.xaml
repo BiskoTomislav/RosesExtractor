@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="643" Width="738">
+    <Grid Height="603">
+        <Button Content="Browse" Height="28" HorizontalAlignment="Left" Margin="6,8,0,0" Name="button1" VerticalAlignment="Top" Width="91" Click="button1_Click" />
+        <Label Content="C:" Height="24" HorizontalAlignment="Left" Margin="124,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <TabControl Height="415" HorizontalAlignment="Left" Margin="8,44,0,0" Name="tabControl1" VerticalAlignment="Top" Width="702">
+            <TabItem Header="Original" Name="tabItem1">
+                <Grid>
+                    <Image Height="383" HorizontalAlignment="Left" Name="imageStart" Stretch="Fill" VerticalAlignment="Top" Width="692" Source="/RosesGUI;component/Images/roses.jpg" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Result" Name="tabItem3">
+                <Grid>
+                    <Image Height="383" HorizontalAlignment="Left" Margin="-5,0,0,0" Name="imageEnd" Stretch="Fill" VerticalAlignment="Top" Width="697" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Content="RUN" Height="40" HorizontalAlignment="Left" Margin="571,481,0,0" Name="button2" VerticalAlignment="Top" Width="108" Click="button2_Click" />
+        <Label Content="HUE" Height="28" HorizontalAlignment="Left" Margin="8,498,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="Saturation" Height="28" HorizontalAlignment="Left" Margin="8,522,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="Lightness" Height="28" HorizontalAlignment="Left" Margin="8,547,0,0" Name="label4" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="98,498,0,0" Name="textBox1" VerticalAlignment="Top" Width="38" PreviewTextInput="textBox1_PreviewTextInput" Text="335" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="176,498,0,0" Name="textBox2" VerticalAlignment="Top" Width="38" Text="10" PreviewTextInput="textBox2_PreviewTextInput" />
+        <Label Content="min:" Height="24" HorizontalAlignment="Left" Margin="68,498,0,0" Name="label5" VerticalAlignment="Top" Width="33" />
+        <Label Content="max:" Height="24" HorizontalAlignment="Left" Margin="142,498,0,0" Name="label6" VerticalAlignment="Top" Width="33" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="98,522,0,0" Name="textBox3" VerticalAlignment="Top" Width="38" PreviewTextInput="textBox3_PreviewTextInput" Text="0.2" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="176,522,0,0" Name="textBox4" Text="1" VerticalAlignment="Top" Width="38" PreviewTextInput="textBox4_PreviewTextInput" />
+        <Label Content="min:" Height="24" HorizontalAlignment="Left" Margin="68,522,0,0" Name="label7" VerticalAlignment="Top" Width="33" />
+        <Label Content="max:" Height="24" HorizontalAlignment="Left" Margin="142,522,0,0" Name="label8" VerticalAlignment="Top" Width="33" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="98,547,0,0" Name="textBox5" VerticalAlignment="Top" Width="38" PreviewTextInput="textBox5_PreviewTextInput" Text="0.1" />
+        <Label Content="min:" Height="24" HorizontalAlignment="Left" Margin="68,547,0,0" Name="label9" VerticalAlignment="Top" Width="33" />
+        <Label Content="max:" Height="24" HorizontalAlignment="Left" Margin="142,547,0,0" Name="label10" VerticalAlignment="Top" Width="33" />
+        <Grid Height="110" HorizontalAlignment="Left" Margin="8,478,0,0" Name="grid1" VerticalAlignment="Top" Width="223" Panel.ZIndex="-1">
+            <TextBox Height="23" HorizontalAlignment="Right" Margin="0,0,17,18" Name="textBox6" Text="1" VerticalAlignment="Bottom" Width="38" PreviewTextInput="textBox6_PreviewTextInput" />
+        </Grid>
+        <Label Content="Object size" Height="28" HorizontalAlignment="Left" Margin="292,499,0,0" Name="label11" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="322,522,0,0" Name="textBox7" VerticalAlignment="Top" Width="38" PreviewTextInput="textBox7_PreviewTextInput" Text="10" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="400,522,0,0" Name="textBox8" Text="25" VerticalAlignment="Top" Width="38" PreviewTextInput="textBox8_PreviewTextInput" />
+        <Label Content="min:" Height="24" HorizontalAlignment="Left" Margin="292,522,0,0" Name="label12" VerticalAlignment="Top" Width="33" />
+        <Label Content="max:" Height="24" HorizontalAlignment="Left" Margin="366,522,0,0" Name="label13" VerticalAlignment="Top" Width="33" />
+        <Button Content="Save image" Height="40" HorizontalAlignment="Left" Margin="571,530,0,0" Name="button3" VerticalAlignment="Top" Width="108" Click="button3_Click" />
+    </Grid>
+</Window>
